@@ -87,8 +87,7 @@ kubectl get all --all-namespaces
 
 ## Step-06: Local Desktop - Install Azure CLI and Azure AKS CLI
 ```
-# Install Azure CLI (MAC)
-brew update && brew install azure-cli
+# Install Azure CLI Windows
 
 # Login to Azure
 az login
@@ -98,6 +97,9 @@ az aks install-cli
 
 # Configure Cluster Creds (kube config)
 az aks get-credentials --resource-group aks-rg1 --name aksdemo1
+
+#Go to kubelet path
+cd C:\Users\Naren Thota\.azure-kubectl
 
 # List AKS Nodes
 kubectl get nodes 
